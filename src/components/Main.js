@@ -30,6 +30,7 @@ function Main() {
     function handleChange(event) {
         setInput(event.target.value);
     }
+    
     function handleSubmit(event){
         event.preventDefault();
         setTitle(input);
@@ -53,8 +54,8 @@ function Main() {
         // en utilisant le spread operator ... pour créer une copie de la liste et
         // en ajoutant le nouvel ingrédient à la fin
         setIngredients([...ingredients, {title: inputTitle, quantity: inputQuantity}]);
-        setInputTitle("");
-        setInputQuantity("");
+        // setInputTitle("");
+        // setInputQuantity("");
     }
 
     return(
